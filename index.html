@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mode-selector">
+            <button onclick="setMode('football')">Football Mode</button>
+            <button onclick="setMode('basketball')">Basketball Mode</button>
+        </div>
+
+        <h2 id="game-title">Football Scoreboard</h2>
+        
+        <div class="timer-display" id="timer">00:00</div>
+
+        <div class="scoreboard">
+            <div class="team">
+                <input type="text" value="HOME" class="team-name">
+                <div class="score" id="home-score">0</div>
+                <div class="controls">
+                    <button class="btn-plus" onclick="changeScore('home', 1)">+1</button>
+                    <button class="btn-plus basketball-only" onclick="changeScore('home', 2)">+2</button>
+                    <button class="btn-plus basketball-only" onclick="changeScore('home', 3)">+3</button>
+                    <button class="btn-minus" onclick="changeScore('home', -1)">-1</button>
+                </div>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team">
+                <input type="text" value="AWAY" class="team-name">
+                <div class="score" id="away-score">0</div>
+                <div class="controls">
+                    <button class="btn-plus" onclick="changeScore('away', 1)">+1</button>
+                    <button class="btn-plus basketball-only" onclick="changeScore('away', 2)">+2</button>
+                    <button class="btn-plus basketball-only" onclick="changeScore('away', 3)">+3</button>
+                    <button class="btn-minus" onclick="changeScore('away', -1)">-1</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-controls">
+            <button id="start-btn" onclick="toggleTimer()">Start</button>
+            <button id="reset-btn" onclick="resetGame()">Reset All</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

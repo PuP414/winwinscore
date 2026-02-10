@@ -1,0 +1,84 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #333;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    width: 90%;
+    max-width: 600px;
+}
+
+.timer-display {
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ff3e3e;
+    background: #000;
+    margin: 20px auto;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 8px;
+    border: 3px solid #444;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.score {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+.team-name {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 120px;
+    border-bottom: 1px solid #555;
+    margin-bottom: 10px;
+}
+
+.controls button {
+    padding: 8px 12px;
+    margin: 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-plus { background: #27ae60; color: white; }
+.btn-minus { background: #c0392b; color: white; }
+
+.main-controls button {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+#start-btn { background: #2980b9; color: white; }
+#reset-btn { background: #7f8c8d; color: white; }
+
+/* ซ่อนปุ่มบาสเกตบอลในโหมดฟุตบอล */
+.basketball-only {
+    display: none;
+}
